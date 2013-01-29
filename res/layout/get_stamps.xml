@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/db1_root"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout style="@style/TitleBar">
+        <TextView style="@style/TitleBarText"
+            android:text="@string/title_received_stamps" />
+	</LinearLayout>
+
+	<LinearLayout
+	    android:orientation="vertical"
+	    android:padding="10dip"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+
+		
+	
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/national_stamps"
+	    />
+	    
+	    <ListView
+        android:id="@+id/list_national_stamps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+	    
+	</LinearLayout>
+
+ 	
+ 	<LinearLayout
+	    android:orientation="vertical"
+	    android:padding="10dip"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/international_stamps"
+	    />
+	    
+	    <ListView
+        android:id="@+id/list_international_stamps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+	    
+	</LinearLayout>
+	
+ 	
+ 	<Button
+		    android:id="@+id/button1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="All stamps" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/db1_root"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+   <include layout="@layout/header" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp" >
+
+            <ImageButton
+                android:id="@+id/buttonInbox"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:src="@drawable/mi_32_inbox" />
+
+            <ImageButton
+                android:id="@+id/buttonSend"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_weight="1"
+                android:src="@drawable/mi_32_send" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp" >
+
+            <ImageButton
+                android:id="@+id/buttonCommunity"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:src="@drawable/mi_32_community" />
+
+            <ImageButton
+                android:id="@+id/buttonScan"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_weight="1"
+                android:src="@drawable/mi_32_scan" />
+        </TableRow>
+        
+       
+    </TableLayout>
+
+</LinearLayout>

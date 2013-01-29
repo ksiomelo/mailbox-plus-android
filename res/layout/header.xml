@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     style="@style/TitleBar">
+     <ImageView style="@style/TitleBarLogo"
+         android:contentDescription="@string/description_logo"
+         android:src="@drawable/title_logo" />
+
+     <ImageView style="@style/TitleBarSeparator" />
+     <TextView style="@style/TitleBarText" />
+    
+     <ImageButton style="@style/TitleBarAction"
+         android:contentDescription="@string/description_search"
+         android:src="@drawable/title_search"
+         android:onClick="onClickLogout" />
+ </LinearLayout>
